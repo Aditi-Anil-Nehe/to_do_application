@@ -2,7 +2,7 @@
 import React, { createContext, useEffect, useReducer } from 'react'
 import{initialState , reducer} from '../reducer/TodoReducer.js'
 
-const TodoContext = createContext()
+const TodoContext = createContext();
 
 const TodoProvider = ({children}) => {
 
