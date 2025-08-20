@@ -3,10 +3,13 @@ import ToDoList from '../Components/ToDoList'
 
 const Home = () => {
   return (
-    <div>
-        <h1>To Do Application</h1>
-      <ToDoList></ToDoList>
-    </div>
+    <>
+    <h1 className='text-center text-success'>To Do Application List</h1>
+
+     <ToDoList>
+
+     </ToDoList>
+     </>
   )
 }
 

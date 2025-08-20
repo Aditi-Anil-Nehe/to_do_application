@@ -23,7 +23,7 @@ const ToDoForm = () => {
     
   }
   return (
-    <div>
+    <div className='container w-50 mx-auto border shadow mt-5 rounded-2 p-3'>
       <h1 className='text-center text-success'><b>To Do Application</b></h1>
       <h3>Create a new ToDo </h3>
       <form onSubmit={handleSubmit} className='card shadow-sm mb-4'>
@@ -37,7 +37,7 @@ const ToDoForm = () => {
           <textarea className='form-control' placeholder='Details about the task' value={description} onChange={(e) => setDescription(e.target.value)} required />
         </div>
 
-        <button type='submit' className='btn-btn-primary'>Add Task</button>
+        <button type='submit' className='btn btn-primary text-center'>Add Task</button>
       </form>
     </div>
   )
