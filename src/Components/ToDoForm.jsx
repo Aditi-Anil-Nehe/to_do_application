@@ -1,16 +1,18 @@
 import React, { useContext, useReducer, useState } from 'react'
 
 import {TodoContext } from '../Context/TodoContext'
+import { useNavigate } from 'react-router-dom'
 
 
 const ToDoForm = () => {
-
+  const navigate = useNavigate();
   const [name, setName] = useState()
   const [description, setDescription] = useState()
   const {dispatch} = useContext(TodoContext)
 
   function handleSubmit(event) {
     event.preventDefault()
+    navigate('/');
 
     try{
       console.log(name, description)
@@ -24,7 +26,7 @@ const ToDoForm = () => {
   }
   return (
     <div className='container w-50 mx-auto border shadow mt-5 rounded-2 p-3'>
-      <h1 className='text-center text-success'><b>To Do Application</b></h1>
+      <h1 className='text-center text-primary'><b>Create New To Do</b></h1>
       <h3>Create a new ToDo </h3>
       <form onSubmit={handleSubmit} className='card shadow-sm mb-4'>
         <div className='mb-3'>

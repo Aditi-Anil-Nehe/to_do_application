@@ -4,7 +4,7 @@ import ToDoList from '../Components/ToDoList'
 const Home = () => {
   return (
     <>
-    <h1 className='text-center text-success'>To Do Application List</h1>
+    <h1 className='text-center text-info-emphasis'>To Do Application List</h1>
 
      <ToDoList>
 
